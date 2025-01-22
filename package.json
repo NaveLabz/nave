@@ -10,8 +10,8 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.tsx": "prettier --write .",
-    "*.ts": "prettier --write ."
+    "*.tsx": "prettier --write",
+    "*.ts": "prettier --write"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
