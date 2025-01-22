@@ -14,9 +14,11 @@
     "*.ts": "eslint --fix"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.473.0",
+    "motion": "^12.0.1",
     "nave": "link:",
     "next": "15.1.6",
     "react": "^19.0.0",
