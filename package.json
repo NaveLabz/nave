@@ -10,8 +10,8 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.tsx": "prettier --write",
-    "*.ts": "prettier --write"
+    "*.tsx": "eslint --fix",
+    "*.ts": "eslint --fix"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
