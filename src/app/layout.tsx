@@ -49,12 +49,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="h-full">
-      <body
-        className={cn('flex h-full flex-col antialiased', outfit.className)}
-      >
-        <Navbar />
-        <main className="flex grow flex-col">{children}</main>
-        <Footer />
+      <body className={cn('h-full antialiased', outfit.className)}>
+        <div className="flex h-full flex-col">
+          <Navbar />
+          <main className="flex grow flex-col">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
