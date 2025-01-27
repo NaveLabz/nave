@@ -14,7 +14,10 @@ export function SectionHeaderTitle({
   const HeadingTag = mainTitle ? 'h1' : 'h2'
 
   return (
-    <HeadingTag className={cn('mb-2', className)} {...props}>
+    <HeadingTag
+      className={cn('', className, mainTitle ? 'mb-4' : 'mb-2')}
+      {...props}
+    >
       {children}
     </HeadingTag>
   )

@@ -3,6 +3,7 @@ import { siteConfig } from '@/config'
 import Link from 'next/link'
 import { buttonVariants } from './ui/button'
 import { MobileNav } from './mobile-nav'
+import { Icons } from './icons'
 
 export function Navbar() {
   return (
@@ -10,7 +11,9 @@ export function Navbar() {
       <WidthWrapper className="max-w-prose">
         <div className="mx-auto md:bg-background md:backdrop-blur md:supports-[backdrop-filter]:bg-background/60">
           <nav className="flex h-14 items-center justify-between gap-8 rounded-full px-0 md:border md:px-8">
-            <Link href="/">Logo</Link>
+            <Link href="/" className="flex items-center">
+              <Icons.logo className="h-fit w-16 translate-y-1 fill-[#f087d9]" />
+            </Link>
 
             <ul className="hidden items-center gap-3 text-sm text-muted-foreground md:flex">
               {siteConfig.mainNav.map((link) => (
