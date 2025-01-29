@@ -65,4 +65,7 @@ body {
   h2 {
     @apply text-3xl font-semibold tracking-tight
   }
+  section {
+    @apply [&:first-child]:md:py-40 relative py-24  
+  }
 }
