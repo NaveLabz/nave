@@ -60,9 +60,12 @@ body {
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-4xl font-extrabold tracking-tight lg:text-5xl
+    @apply text-4xl font-bold tracking-tight lg:text-5xl
   }
   h2 {
     @apply text-3xl font-semibold tracking-tight
+  }
+  section {
+    @apply [&:first-child]:md:py-40 relative py-24  
   }
 }

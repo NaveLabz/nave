@@ -14,10 +14,15 @@
     "*.ts": "eslint --fix"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-dialog": "^1.1.5",
     "@radix-ui/react-slot": "^1.1.1",
+    "@tsparticles/engine": "^3.8.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.0.6",
     "lucide-react": "^0.473.0",
     "motion": "^12.0.1",
     "next": "15.1.6",
