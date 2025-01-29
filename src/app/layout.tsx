@@ -48,13 +48,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="h-full">
-      <body
-        className={cn('flex h-full flex-col antialiased', outfit.className)}
-      >
-        <Navbar />
-        <main className="flex grow flex-col">{children}</main>
-        <Footer />
+    <html lang="pt-BR" className="h-full scroll-smooth">
+      <body className={cn('h-full min-h-screen antialiased', outfit.className)}>
+        <div className="flex flex-col">
+          <Navbar />
+          <main className="flex h-full grow flex-col">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
