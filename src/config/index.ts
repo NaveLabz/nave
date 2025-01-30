@@ -14,6 +14,10 @@ const createSiteConfig = () => {
       href: '#processo',
     },
     {
+      label: 'Avaliações',
+      href: '#avaliacoes',
+    },
+    {
       label: 'Benefícios',
       href: '#beneficios',
     },

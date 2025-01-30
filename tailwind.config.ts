@@ -1,5 +1,10 @@
 import type { Config } from 'tailwindcss'
 
+const {
+  default: flattenColorPalette,
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+} = require('tailwindcss/lib/util/flattenColorPalette')
+
 export default {
   darkMode: ['class'],
   content: [
@@ -10,12 +15,19 @@ export default {
   theme: {
     extend: {
       animation: {
+        scroll:
+          'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
         'meteor-effect': 'meteor 5s linear infinite',
         shimmer: 'shimmer 3s linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       keyframes: {
+        scroll: {
+          to: {
+            transform: 'translate(calc(-50% - 0.5rem))',
+          },
+        },
         meteor: {
           '0%': { transform: 'rotate(215deg) translateX(0)', opacity: '1' },
           '70%': { opacity: '1' },
@@ -100,5 +112,17 @@ export default {
     },
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), addVariablesForColors],
 } satisfies Config
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme('colors'))
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
+  addBase({
+    ':root': newVars,
+  })
+}
