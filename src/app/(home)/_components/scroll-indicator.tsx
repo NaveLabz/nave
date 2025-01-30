@@ -9,7 +9,7 @@ export function ScrollIndicator() {
         <motion.div
           animate={{ y: [0, 16, 0] }}
           transition={{ repeat: Infinity, duration: 5, ease: 'easeInOut' }}
-          className="h-3 w-full rounded-full bg-[#f089d9]"
+          className="h-3 w-full rounded-full bg-nave"
         ></motion.div>
       </div>
       <span className="text-[10px] text-muted-foreground">SCROLL</span>

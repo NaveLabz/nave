@@ -71,10 +71,10 @@ export function Pricing() {
           <div className="grid grid-cols-1 gap-8 text-balance md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-4">
             {PLANS.map((plan, i) => (
               <div
-                className="group relative flex flex-col items-start gap-5 overflow-hidden rounded-xl border border-[#f089d9] p-6 [&:nth-child(2)]:bg-[rgba(146,17,118,0.2)]"
+                className="group relative flex flex-col items-start gap-5 overflow-hidden rounded-xl border border-nave p-6 [&:nth-child(2)]:bg-nave/10"
                 key={i}
               >
-                <div className="absolute inset-0 -z-20 bg-gradient-to-tl from-[rgba(240,137,217,0.4)] via-transparent to-transparent opacity-40">
+                <div className="absolute inset-0 -z-20 bg-gradient-to-tl from-nave/40 via-transparent to-transparent opacity-40">
                   <Meteors number={4} />
                 </div>
                 <div className="space-y-2">
@@ -86,7 +86,7 @@ export function Pricing() {
                   <p className="text-muted-foreground">Em até 8x sem juros</p>
                 </div>
 
-                <Separator className="bg-gradient-to-l from-transparent via-[#ffb9f0] to-transparent" />
+                <Separator className="bg-gradient-to-l from-transparent via-nave to-transparent" />
 
                 <ul className="space-y-2">
                   {plan.items.map((item, i) => (

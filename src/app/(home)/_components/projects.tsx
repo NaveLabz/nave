@@ -48,7 +48,7 @@ export function Projects() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
             {PROJECTS.map((project, i) => (
               <Link
-                className="group relative flex flex-col items-start overflow-hidden text-pretty rounded-xl border border-[#f089d9] hover:cursor-pointer"
+                className="group relative flex flex-col items-start overflow-hidden text-pretty rounded-xl border border-nave hover:cursor-pointer"
                 href={project.url}
                 target="_blank"
                 key={i}
@@ -58,7 +58,7 @@ export function Projects() {
                     <Button
                       variant="secondary"
                       size="icon"
-                      className="absolute right-1/2 top-1/2 translate-x-1/2 bg-[#f089d9] opacity-0 transition-all hover:bg-[#e06ec8] group-hover:-translate-y-1/2 group-hover:opacity-100"
+                      className="absolute right-1/2 top-1/2 translate-x-1/2 bg-nave opacity-0 transition-all hover:bg-nave/80 group-hover:-translate-y-1/2 group-hover:opacity-100"
                     >
                       <SquareArrowOutUpRight />
                     </Button>
@@ -72,7 +72,7 @@ export function Projects() {
                   />
                 </div>
 
-                <div className="relative flex w-full grow flex-col gap-1 border-t border-[#f089d9] p-4">
+                <div className="relative flex w-full grow flex-col gap-1 border-t border-nave p-4">
                   <p className="text-base font-bold md:text-lg">
                     {project.title}
                   </p>
@@ -80,7 +80,7 @@ export function Projects() {
                   <p className="text-sm text-muted-foreground md:text-base">
                     {project.description}
                   </p>
-                  <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-[rgba(240,137,217,0.4)] via-transparent to-transparent opacity-30 transition-opacity group-hover:opacity-70">
+                  <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-nave/40 via-transparent to-transparent opacity-30 transition-opacity group-hover:opacity-70">
                     <Meteors number={4} />
                   </div>
                 </div>

@@ -12,7 +12,7 @@ export function Navbar() {
         <div className="mx-auto">
           <nav className="flex h-14 items-center justify-between gap-8 rounded-full px-0 md:border md:bg-background md:px-8 md:backdrop-blur md:supports-[backdrop-filter]:bg-background/60">
             <Link href="/" className="flex items-center">
-              <Icons.logo className="h-fit w-16 translate-y-1 fill-[#f087d9]" />
+              <Icons.logo className="h-fit w-16 translate-y-1 fill-nave" />
             </Link>
 
             <ul className="hidden items-center gap-3 text-sm text-muted-foreground md:flex">

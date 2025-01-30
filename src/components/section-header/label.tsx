@@ -16,7 +16,7 @@ export function SectionHeaderLabel({
     <div
       {...props}
       className={cn(
-        'mb-4 flex items-center gap-1.5 rounded-md border bg-gradient-to-r from-foreground to-[#ffc6f3] px-3 py-1.5 text-xs text-background',
+        'mb-4 flex items-center gap-1.5 rounded-md border bg-gradient-to-r from-foreground to-[#fcd2f3] px-3 py-1.5 text-xs text-background',
         className,
       )}
     >

@@ -14,7 +14,7 @@ export function Footer() {
               target="_top"
               className="flex w-fit items-center justify-center"
             >
-              <Icons.logo className="h-fit w-48 fill-foreground/80 transition-colors hover:fill-foreground/50" />
+              <Icons.logo className="h-fit w-48 fill-nave" />
             </Link>
 
             <ul className="flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
