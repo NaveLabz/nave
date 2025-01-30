@@ -1,13 +1,40 @@
 import { SectionHeader } from '@/components/section-header'
+import { Button } from '@/components/ui/button'
+import { Meteors } from '@/components/ui/meteors'
 import { WidthWrapper } from '@/components/width-wrapper'
-import { Boxes } from 'lucide-react'
+import { Boxes, SquareArrowOutUpRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
+
+const PROJECTS = [
+  {
+    title: 'Clínica Layse Félix',
+    image: '/clinica-layse-felix.webp',
+    description:
+      'Saúde e bem-estar com pilates, fisioterapia e medicina do trabalho.',
+    url: 'https://clinicalaysefelix.com.br',
+  },
+  {
+    title: 'Professora Camile Medeiros',
+    image: '/profa-camile-medeiros.webp',
+    description:
+      'Conteúdos e materiais educacionais da professora Camile Medeiros.',
+    url: 'https://profacamilemedeiros.com.br',
+  },
+  {
+    title: 'KRCOD',
+    image: '/krcod.webp',
+    description:
+      'Ferramenta de gerar QR Codes para desenvolvedores e designers.',
+    url: 'https://krcod.com',
+  },
+]
 
 export function Projects() {
   return (
-    <section id="projetos" className="scroll-m-16">
-      <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+    <section id="projetos" className="scroll-m-40">
+      <WidthWrapper>
+        <div className="space-y-8 md:space-y-12">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Boxes}>
               Nossos projetos
@@ -18,18 +45,47 @@ export function Projects() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-20 text-balance text-center md:grid-cols-2 md:gap-6">
-            <div className="overflow-hidden rounded-xl border border-[#f089d9]">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-tl from-[rgba(240,137,217,0.3)] via-transparent to-transparent"></div>
-                <Image
-                  src="/project-placeholder.webp"
-                  alt="Teste"
-                  width={1920}
-                  height={1080}
-                />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
+            {PROJECTS.map((project, i) => (
+              <Link
+                className="group relative flex flex-col items-start overflow-hidden text-pretty rounded-xl border border-[#f089d9] hover:cursor-pointer"
+                href={project.url}
+                target="_blank"
+                key={i}
+              >
+                <div className="relative overflow-hidden">
+                  <div className="absolute inset-0 bg-transparent backdrop-blur-none transition-all group-hover:bg-background/40 group-hover:backdrop-blur-sm">
+                    <Button
+                      variant="secondary"
+                      size="icon"
+                      className="absolute right-1/2 top-1/2 translate-x-1/2 bg-[#f089d9] opacity-0 transition-all hover:bg-[#e06ec8] group-hover:-translate-y-1/2 group-hover:opacity-100"
+                    >
+                      <SquareArrowOutUpRight />
+                    </Button>
+                  </div>
+
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+
+                <div className="relative flex w-full grow flex-col gap-1 border-t border-[#f089d9] p-4">
+                  <p className="text-base font-bold md:text-lg">
+                    {project.title}
+                  </p>
+
+                  <p className="text-sm text-muted-foreground md:text-base">
+                    {project.description}
+                  </p>
+                  <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-[rgba(240,137,217,0.4)] via-transparent to-transparent opacity-30 transition-opacity group-hover:opacity-70">
+                    <Meteors number={4} />
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </WidthWrapper>
