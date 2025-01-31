@@ -59,6 +59,7 @@ export function Projects() {
                       variant="secondary"
                       size="icon"
                       className="absolute right-1/2 top-1/2 translate-x-1/2 bg-nave opacity-0 transition-all hover:bg-nave/80 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                      aria-label={`Navegar para ${project.title}`}
                     >
                       <SquareArrowOutUpRight />
                     </Button>
