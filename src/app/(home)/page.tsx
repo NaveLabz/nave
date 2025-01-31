@@ -5,6 +5,7 @@ import { Steps } from '@/app/(home)/_components/steps'
 import { Pricing } from '@/app/(home)/_components/pricing'
 import { Projects } from '@/app/(home)/_components/projects'
 import { Testimonials } from '@/app/(home)/_components/testimonials'
+import { CTA } from '@/app/(home)/_components/cta'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefits />
       <Pricing />
       <FAQ />
+      <CTA />
     </>
   )
 }
