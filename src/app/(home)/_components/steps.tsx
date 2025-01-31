@@ -22,7 +22,7 @@ const STEPS = [
 
 export function Steps() {
   return (
-    <section id="processo" className="scroll-m-16">
+    <section id="processo" className="scroll-m-52">
       <WidthWrapper className="max-w-5xl">
         <div className="section-spacing">
           <SectionHeader.Root>

@@ -38,7 +38,7 @@ const QUESTIONS = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="scroll-m-16">
+    <section id="faq" className="scroll-m-48">
       <WidthWrapper className="max-w-3xl">
         <div className="section-spacing">
           <SectionHeader.Root>

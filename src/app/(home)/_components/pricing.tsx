@@ -57,7 +57,7 @@ const PLANS = [
 
 export function Pricing() {
   return (
-    <section id="precos" className="scroll-m-8">
+    <section id="precos" className="scroll-m-32">
       <WidthWrapper className="max-w-5xl">
         <div className="section-spacing">
           <SectionHeader.Root>

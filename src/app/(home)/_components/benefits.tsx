@@ -45,7 +45,7 @@ const BENEFITS = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="scroll-m-4">
+    <section id="beneficios" className="scroll-m-32">
       <WidthWrapper className="max-w-5xl">
         <div className="section-spacing">
           <SectionHeader.Root>
