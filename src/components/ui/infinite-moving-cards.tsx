@@ -102,7 +102,9 @@ export const InfiniteMovingCards = ({
                     <Star key={i} className="size-4 fill-nave text-nave" />
                   ))}
                 </div>
-                <p className="text-foreground">{item.quote}</p>
+                <p className="text-sm text-foreground md:text-base">
+                  {item.quote}
+                </p>
               </div>
 
               <div className="flex items-center gap-2">
