@@ -35,7 +35,7 @@ export function Steps() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-20 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
+          <div className="grid grid-cols-1 gap-8 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
             {STEPS.map((step, i) => (
               <div
                 key={i}

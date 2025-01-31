@@ -58,7 +58,7 @@ export function Benefits() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-20 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-x-4 md:gap-y-12">
+          <div className="grid grid-cols-1 gap-8 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-x-4 md:gap-y-12">
             {BENEFITS.map((benefit, i) => (
               <div
                 key={i}
