@@ -1,6 +1,7 @@
 const createSiteConfig = () => {
   const links = {
     github: 'https://github.com/navelabz/nave',
+    instagram: 'https://www.instagram.com/navelabz/',
     whatsapp: '',
   }
 

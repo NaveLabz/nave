@@ -1,8 +1,9 @@
 import { SectionHeader } from '@/components/section-header'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { Meteors } from '@/components/ui/meteors'
 import { Separator } from '@/components/ui/separator'
 import { WidthWrapper } from '@/components/width-wrapper'
+import { siteConfig } from '@/config'
 import {
   Circle,
   CircleCheck,
@@ -10,6 +11,7 @@ import {
   Earth,
   Orbit,
 } from 'lucide-react'
+import Link from 'next/link'
 
 const PLANS = [
   {
@@ -96,7 +98,13 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <Button className="mt-auto w-full">Fazer orçamento</Button>
+                <Link
+                  href={siteConfig.links.instagram}
+                  target="_blank"
+                  className={buttonVariants({ className: 'mt-auto w-full' })}
+                >
+                  Fazer orçamento
+                </Link>
               </div>
             ))}
           </div>

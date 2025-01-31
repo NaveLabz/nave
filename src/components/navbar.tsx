@@ -27,7 +27,8 @@ export function Navbar() {
             </ul>
 
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.instagram}
+              target="_blank"
               className={buttonVariants({
                 size: 'sm',
                 className: 'hidden md:flex',

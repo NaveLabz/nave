@@ -45,7 +45,8 @@ export function MobileNav() {
 
             <li className="w-full">
               <Link
-                href={siteConfig.links.github}
+                href={siteConfig.links.instagram}
+                target="_blank"
                 onClick={() => setIsOpen(false)}
                 className={buttonVariants({
                   size: 'sm',

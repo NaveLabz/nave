@@ -1,7 +1,9 @@
 import { SectionHeader } from '@/components/section-header'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { Meteors } from '@/components/ui/meteors'
 import { WidthWrapper } from '@/components/width-wrapper'
+import { siteConfig } from '@/config'
+import Link from 'next/link'
 
 export function CTA() {
   return (
@@ -20,9 +22,13 @@ export function CTA() {
               horizontes.
             </SectionHeader.Description>
 
-            <Button size="sm" className="mt-6">
+            <Link
+              target="_blank"
+              className={buttonVariants({ size: 'sm', className: 'mt-6' })}
+              href={siteConfig.links.instagram}
+            >
               Fazer orçamento
-            </Button>
+            </Link>
           </SectionHeader.Root>
         </div>
       </WidthWrapper>
