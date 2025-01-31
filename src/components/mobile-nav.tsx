@@ -19,7 +19,7 @@ export function MobileNav() {
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger className="block md:hidden">
+      <SheetTrigger className="block md:hidden" aria-label="Abrir menu">
         <AlignRight />
       </SheetTrigger>
       <SheetContent side="top">
