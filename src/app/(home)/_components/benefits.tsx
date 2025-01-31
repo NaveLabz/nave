@@ -45,9 +45,9 @@ const BENEFITS = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="scroll-m-4">
+    <section id="beneficios" className="scroll-m-32">
       <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Star}>
               Seus benefícios
@@ -58,7 +58,7 @@ export function Benefits() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-20 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-x-4 md:gap-y-12">
+          <div className="grid grid-cols-1 gap-8 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-x-4 md:gap-y-12">
             {BENEFITS.map((benefit, i) => (
               <div
                 key={i}

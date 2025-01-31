@@ -5,6 +5,7 @@ import { siteConfig } from '@/config'
 import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { Analytics } from '@vercel/analytics/next'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -14,7 +15,10 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  authors: [{ name: 'Aridan Pantoja', url: 'https://aridan.dev' }],
+  authors: [
+    { name: 'Aridan Pantoja', url: 'https://aridan.dev' },
+    { name: 'Karol Wojtyla', url: 'https://www.linkedin.com/in/karolwojtyla/' },
+  ],
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   category: 'website',
   metadataBase: new URL(siteConfig.url),
-  manifest: '/manifest.json',
+  manifest: '/manifest.webmanifest',
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.name,
@@ -55,6 +59,7 @@ export default function RootLayout({
           <main className="flex h-full grow flex-col">{children}</main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   )

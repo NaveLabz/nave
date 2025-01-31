@@ -7,7 +7,7 @@ import Link from 'next/link'
 export function Hero() {
   return (
     <section>
-      <div className="absolute inset-0 -z-30 bg-[radial-gradient(circle_300px_at_50%_200px,#f089d9,transparent)] opacity-10"></div>
+      <div className="absolute inset-0 -z-30 bg-[radial-gradient(circle_300px_at_50%_200px,theme(colors.nave),transparent)] opacity-5 sm:opacity-15"></div>
       <div className="absolute inset-0 -z-20 h-full w-full opacity-60">
         <SparklesCore
           id="tsparticlesfullpage"
@@ -24,7 +24,7 @@ export function Hero() {
 
           <SectionHeader.Title mainTitle>
             Transforme sua presença digital com a{' '}
-            <span className="text-[#f089d9]">Nave Labz</span>
+            <span className="text-nave">Nave Labz</span>
           </SectionHeader.Title>
 
           <SectionHeader.Description>
@@ -35,7 +35,7 @@ export function Hero() {
           <Link
             href="#precos"
             target="_self"
-            className="mt-6 inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-[#f089d9] bg-[linear-gradient(110deg,#000103,45%,rgba(240,137,217,0.25),55%,#000103)] bg-[length:200%_100%] px-4 font-medium text-foreground transition-colors hover:text-foreground/70 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ring"
+            className="mt-6 inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-nave bg-[linear-gradient(110deg,theme(colors.background),45%,rgba(240,137,217,0.25),55%,theme(colors.background))] bg-[length:200%_100%] px-4 font-medium text-foreground transition-colors hover:text-foreground/70 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ring"
           >
             Ver preços
           </Link>

@@ -1,6 +1,7 @@
 const createSiteConfig = () => {
   const links = {
     github: 'https://github.com/navelabz/nave',
+    instagram: 'https://www.instagram.com/navelabz/',
     whatsapp: '',
   }
 
@@ -14,12 +15,12 @@ const createSiteConfig = () => {
       href: '#processo',
     },
     {
-      label: 'Benefícios',
-      href: '#beneficios',
+      label: 'Avaliações',
+      href: '#avaliacoes',
     },
     {
-      label: 'Serviços',
-      href: '#servicos',
+      label: 'Benefícios',
+      href: '#beneficios',
     },
     {
       label: 'Preços',

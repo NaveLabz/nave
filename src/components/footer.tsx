@@ -14,7 +14,7 @@ export function Footer() {
               target="_top"
               className="flex w-fit items-center justify-center"
             >
-              <Icons.logo className="h-fit w-48 fill-foreground/80 transition-colors hover:fill-foreground/50" />
+              <Icons.logo className="h-fit w-48 fill-nave" />
             </Link>
 
             <ul className="flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
@@ -33,7 +33,24 @@ export function Footer() {
 
       <div className="border-t py-4 text-xs text-muted-foreground">
         <WidthWrapper>
-          <p>Created by Karol Wojtyla, Aridan Pantoja</p>
+          <p>
+            Desenvolvido com ❤️ por{' '}
+            <Link
+              href="https://www.linkedin.com/in/karolwojtyla/"
+              target="_blank"
+              className="text-nave underline underline-offset-4 transition-colors hover:text-nave/80"
+            >
+              Karol Wojtyla
+            </Link>{' '}
+            &{' '}
+            <Link
+              href="https://www.linkedin.com/in/aridanpantoja/"
+              target="_blank"
+              className="text-nave underline underline-offset-4 transition-colors hover:text-nave/80"
+            >
+              Aridan Pantoja
+            </Link>
+          </p>
         </WidthWrapper>
       </div>
     </footer>

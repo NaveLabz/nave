@@ -22,9 +22,9 @@ const STEPS = [
 
 export function Steps() {
   return (
-    <section id="processo" className="scroll-m-16">
+    <section id="processo" className="scroll-m-52">
       <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Route}>
               Nosso processo
@@ -35,7 +35,7 @@ export function Steps() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-20 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
+          <div className="grid grid-cols-1 gap-8 text-balance text-center sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-4">
             {STEPS.map((step, i) => (
               <div
                 key={i}

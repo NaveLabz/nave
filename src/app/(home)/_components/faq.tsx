@@ -38,9 +38,9 @@ const QUESTIONS = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="scroll-m-16">
+    <section id="faq" className="scroll-m-48">
       <WidthWrapper className="max-w-3xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={MessageCircleQuestion}>
               FAQ
