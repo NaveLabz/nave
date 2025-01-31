@@ -33,9 +33,10 @@ const createSiteConfig = () => {
   ]
 
   return {
-    name: 'Nave',
+    name: 'Nave Labz | Transforme sua presença digital',
     url: 'https://navelabz.com.br',
-    description: 'Nave description.',
+    description:
+      'Criamos sites e experiências digitais que ajudam sua empresa a a se destacar no mundo online.',
     ogImage: 'https://navelabz.com.br/og.jpg',
     mainNav,
     links,
