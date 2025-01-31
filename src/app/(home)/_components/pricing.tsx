@@ -17,7 +17,7 @@ const PLANS = [
   {
     Icon: Circle,
     title: 'Plutão',
-    price: 'R$ 400',
+    price: 'R$ 500',
     items: [
       'Landing Page',
       'Link Tree personalizada',
@@ -70,7 +70,7 @@ export function Pricing() {
             </SectionHeader.Description>
           </SectionHeader.Root>
 
-          <div className="grid grid-cols-1 gap-8 text-balance md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-4">
+          <div className="grid grid-cols-1 gap-8 text-balance sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-4">
             {PLANS.map((plan, i) => (
               <div
                 className="group relative flex flex-col items-start gap-5 overflow-hidden rounded-xl border border-nave p-6 [&:nth-child(2)]:bg-nave/10"
