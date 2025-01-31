@@ -68,4 +68,7 @@ body {
   section {
     @apply [&:first-child]:md:py-40 relative mb-24  [&:first-child]:py-24 
   }
+  .section-spacing {
+    @apply space-y-8 md:space-y-12
+  }
 }

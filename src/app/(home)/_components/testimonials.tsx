@@ -30,7 +30,7 @@ export function Testimonials() {
   return (
     <section id="avaliacoes" className="scroll-m-40">
       <WidthWrapper>
-        <div className="space-y-8 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Sparkles}>
               Nossas avaliações

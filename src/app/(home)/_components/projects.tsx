@@ -34,7 +34,7 @@ export function Projects() {
   return (
     <section id="projetos" className="scroll-m-40">
       <WidthWrapper>
-        <div className="space-y-8 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Boxes}>
               Nossos projetos

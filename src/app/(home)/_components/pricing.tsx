@@ -57,7 +57,7 @@ export function Pricing() {
   return (
     <section id="precos" className="scroll-m-8">
       <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={CircleDollarSign}>
               Nossos preços

@@ -47,7 +47,7 @@ export function Benefits() {
   return (
     <section id="beneficios" className="scroll-m-4">
       <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Star}>
               Seus benefícios

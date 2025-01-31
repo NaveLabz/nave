@@ -24,7 +24,7 @@ export function Steps() {
   return (
     <section id="processo" className="scroll-m-16">
       <WidthWrapper className="max-w-5xl">
-        <div className="space-y-16 md:space-y-12">
+        <div className="section-spacing">
           <SectionHeader.Root>
             <SectionHeader.Label icon={Route}>
               Nosso processo
