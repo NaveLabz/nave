@@ -7,7 +7,7 @@ import Link from 'next/link'
 export function Hero() {
   return (
     <section>
-      <div className="absolute inset-0 -z-30 bg-[radial-gradient(circle_300px_at_50%_200px,theme(colors.nave),transparent)] opacity-15"></div>
+      <div className="absolute inset-0 -z-30 bg-[radial-gradient(circle_300px_at_50%_200px,theme(colors.nave),transparent)] opacity-5 sm:opacity-15"></div>
       <div className="absolute inset-0 -z-20 h-full w-full opacity-60">
         <SparklesCore
           id="tsparticlesfullpage"
