@@ -22,10 +22,6 @@ const createSiteConfig = () => {
       href: '#beneficios',
     },
     {
-      label: 'Serviços',
-      href: '#servicos',
-    },
-    {
       label: 'Preços',
       href: '#precos',
     },
