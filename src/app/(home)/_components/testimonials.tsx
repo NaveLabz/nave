@@ -6,24 +6,24 @@ import { Sparkles } from 'lucide-react'
 const TESTIMONIALS = [
   {
     quote:
-      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
-    name: 'Jane Austen',
-    role: 'Pride and Prejudice',
-    image: '/karol-wojtyla.webp',
+      'A Nave ofereceu um serviço de extrema qualidade, possibilitando a facilidade e acessibilidade através do site produzido para o meu perfil. Recomendo para quem quer ampliar o seu negócio com qualidade e eficácia.',
+    name: 'Camile Medeiros',
+    role: 'CEO - Profa. Camile Medeiros',
+    image: '/camile-medeiros.webp',
   },
   {
     quote:
-      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
-    name: 'Jane Austen',
-    role: 'Pride and Prejudice',
-    image: '/karol-wojtyla.webp',
+      'Impecável! Surpreendeu todas as expectativas. A Nave foi muito prestativa, flexível e pontual com muito bom gosto. A entrega ficou perfeita, de forma muito organizada. Recomendo fortemente.',
+    name: 'Fabiana Macedo',
+    role: 'CEO & Co-Founder - Local MKT',
+    image: '/fabiana-macedo.webp',
   },
   {
     quote:
-      'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
-    name: 'Jane Austen',
-    role: 'Pride and Prejudice',
-    image: '/karol-wojtyla.webp',
+      'Muito bom mesmo! Maravilhoso o serviço prestado pela Nave. Com certeza voltaremos a trabalhar juntos no futuro!',
+    name: 'Lucas Botelho',
+    role: 'CEO & Co-Founder - Agência Zion Web',
+    image: '/lucas-botelho.webp',
   },
 ]
 export function Testimonials() {
